@@ -39,7 +39,7 @@ function(add_mfront_behaviour_sources lib  file)
     OUTPUT  "${mfront_output2}"
     COMMAND ${CONAN_ENV_CMD} "${MFRONT}"
     ARGS    "--interface=generic"
-    ARGS    "--@GenericInterfaceGenerateMTestFileOnFailure=true"
+    ARGS    "--@GenericInterfaceGenerateMTestFileOnFailure=false"
     ARGS     "${mfront_file}"
     DEPENDS "${mfront_file}"
     COMMENT "mfront source ${mfront_file}")
